@@ -1,0 +1,262 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.7px;
+    line-height: 1.3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #28214f;
+    color: #c0b6ff;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1, h2 {
+    color: #FFF;
+}
+
+/* ============================ Header =============================== */
+
+.top-header {
+    /* background-color: #c0b6ff; */
+    background-color: rgb(30, 30, 30);
+    padding:  1px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%
+    /* start  center  space-between  space-around  space-evenly */
+}
+.icons {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 20px;
+    width: 85%;
+}
+
+.icons a {
+    margin: 0 20px;
+    color: #f1f1f1;
+    /* color: #28214f; */
+    text-decoration: none;
+}
+
+.logo {
+    width: 5%;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.menu a {
+    margin: 0 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* ============================ Section 1 =============================== */
+
+.section1 {
+    background-image: url("img/bg_code.jpg");
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-sec1 {
+    margin-left: 65%;
+}
+
+.section1 h3 {
+    font-size: 13px;
+    line-height: 1px;
+    letter-spacing: 0.5px;
+}
+
+.section1 h2 {
+    line-height: 10px;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+
+.section1 h4 {
+    font-size: 13px;
+    letter-spacing: 0.8px;
+}
+
+.section1 p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 0.8px;
+}
+
+/* ============================ Section 2 =============================== */
+
+.section2 {
+    background-image: linear-gradient(rgba(0, 0, 1, 0.9), rgba(0, 0, 1, 0.7)), url("img/rm378-08c.jpg");
+    background-size: cover;
+    min-height: 250px;
+    text-align: center;
+    color: white;
+    padding: 100px 0    ;
+}
+
+#div1, #div2, #div3, #div4  {
+    margin: 30px 0;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#div1 h5 {
+    font-weight: 900;
+    font-size: 18px;
+    color: #c0b6ff;
+}
+
+#div1 li {
+    margin: 10px 0;
+}
+
+.section-dark {
+    background-image: url("img/rm378-08c.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 600px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.hidden-div {
+    display: none;
+}
+
+.button {
+    padding: 15px 25px;
+    background-color: #28214f;
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+.imgContainer img:active {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+/* ============================ Blog =============================== */
+
+.section3 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container-sec3 {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.img-blog {
+    width: 250px;
+}
+
+.container-blog {
+    width: 300px;
+}
+
+.container-blog p {
+    text-align: justify;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 5; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+/* ============================ Contato =============================== */
+
+#contato {
+    color: white;
+    font-size: 18px;
+    line-height: 2;
+    padding: 60px 2%;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    border-top: 2px solid #888888;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contato .container {
+    width: 25%;
+}
+
+#contato a {
+    text-decoration: none;
+}
+
+#contato p {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-footer {
+    color: white; 
+    font-size: 34px;
+}
+
+/* ============================ Footer =============================== */
+
+footer {
+    /* background-color: #c0b6ff; */
+    color: #FFF;
+    text-align: center; 
+    padding: 10px 0;
+}
+
+/* Cor thema light #c0b6ff */
