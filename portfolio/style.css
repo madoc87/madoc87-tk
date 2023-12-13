@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    display: flex;
+    background: #22212c;
+    color: #837E9F;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* ################### Sidebar ###################### */
+#sidebar {
+    /* width: 25%; */
+    width: 348px;
+    margin-right: 40px;
+}
+
+.container {
+    text-align: center;
+}
+
+.side-titulo{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: left;
+    padding-left: 30px;
+}
+
+/* ################## Side Perfil #################### */
+#side-perfil {
+    background: #302F3D;
+    height: 260px;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin: 30px auto; */
+}
+
+#side-perfil img {
+    width: 50%;
+    margin: 10px 0;
+    border: 2px solid #0f0;
+    border-radius: 128px;
+}
+
+#side-perfil p {
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#side-perfil span {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+/* ################## Side Links ##################### */
+#side-links {
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 30px auto;
+}
+
+.container-link {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.container-link img {
+    margin: 10px 15px;
+}
+
+.container-link span {
+    align-items: center;
+    justify-content: center;
+}
+
+/* ################### Side Tech ###################### */
+#side-tech {
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+.wrap-tech{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrap-tech span {
+    background-color: #CB92B1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    width: max-content;
+    /* padding-inline: 5px; */
+    height: 24px;
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+/* ################### Side XP ###################### */
+#side-xp {
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+#side-xp ul {
+    width: 175px;
+    margin: 0 40px;
+    text-align: left;
+}
+
+#side-xp ul li {
+    margin: 10px;
+}
+
+#side-xp ul li p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#side-xp span{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* ################### Side Edu ###################### */
+#side-edu {
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 10px;
+    /* margin: 30px auto; */
+}
+
+#side-edu ul {
+    width: 175px;
+    margin: 0 40px;
+    text-align: left;
+}
+
+#side-edu ul li {
+    margin: 10px;
+}
+
+#side-edu ul li p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#side-edu span{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* ################### Main ###################### */
+#main {
+    /* background: #302F3D; */
+    /* border: solid 1px yellow; */
+    flex: 1 0 auto;
+    border-radius: 20px;
+    /* padding: 20px; */
+}
+
+.main-projetos{
+    /* border: solid 1px blue; */
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 10px;
+    height: 65px;
+    /* margin-bottom: 30px; */
+}
+
+.wrap-projetos {
+    /* border: solid 1px red; */
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+}
+
+.main-post {
+    background: #302F3D;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 30px 0;
+    height: 186px;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.wrap-post {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.wrap-post img {
+    padding:    0 16px;
+}
+
+
+.wrap-post-footer {
+    /* align-content: flex-end; */
+    margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+.main-comentario {
+    margin: 30px 0;
+}
+
+/* #main {
+    width: 70%;
+    display: flex;
+    border: solid 1px blue;
+} */
