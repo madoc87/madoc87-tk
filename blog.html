@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
+
+    <!-- <link rel="stylesheet" href="../blog/style-blog.css"> -->
+    <!-- <link rel="stylesheet" href="../src/css/style.css"> -->
+</head>
+<body>
+    <header class="header">
+        <img class="logo" alt="Logo" style="width: 5%;" src="../src/img/logo_madoc87_v1.png">
+        <nav class="menu">
+            <ul>
+                <a href="/">Home</a>
+                <a href="/#servers">Servidores</a>
+                <a href="/#blog">Blog</a>
+                <a href="/#contato">Contato</a>
+                <a href="/devlink/index.html">DevLinks</a>
+                <a href="https://madoc87.github.io/portfolio/">Portfolio</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Blog</h1>
+        <section id="conteudo-principal"></section>
+        <aside id="barra-lateral"></aside>
+    </main>
+    <footer>
+        <p>Copyright &copy; <span id="ano"> </p>
+    </footer>
+</body>
+
+
+
+<script>
+    //Script para carregamento dinamico do conteudo
+    document.addEventListener("DOMContentLoaded", function() {
+
+    // Função para obter o valor do parâmetro 'postagem' da URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    const postagemNome = getQueryParam('postagem') || 'postagem-1'; // Padrão para 'postagem-1.html' se nenhum parâmetro for fornecido
+    const container = document.getElementById("conteudo-principal");
+
+    // Função para carregar a postagem
+    function carregarPostagem() {
+        fetch(`blog/${postagemNome}.html`)
+            .then(response => response.text())
+            .then(html => container.innerHTML = html)
+            .catch(err => console.log('Erro ao carregar a postagem:', err));
+    }
+
+    // Carrega a postagem ao carregar a página
+    carregarPostagem();
+});
+
+
+
+
+
+
+    //Script para pagina não carregar antes dos estilos CSS
+    document.addEventListener("DOMContentLoaded", function() {
+    
+    var link1 = document.createElement("link");
+    link1.rel = "stylesheet";
+    link1.href = "../blog/style-blog.css";
+    
+    document.head.appendChild(link1);
+
+    var link2 = document.createElement("link");
+    link2.rel = "stylesheet";
+    link2.href = "../src/css/style.css";
+    document.head.appendChild(link2);
+    });
+
+
+    //Script para mostrar o ano atual
+    const anoAtual = new Date().getFullYear();
+    document.getElementById("ano").innerHTML = anoAtual;
+
+</script>
+</html>
