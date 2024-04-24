@@ -1,3 +1,8 @@
+:root {
+    --cor-primaria: #c0b6ff;
+    --cor-bg: #28214f;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.7px;
@@ -7,8 +12,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #28214f;
-    color: #c0b6ff;
+    background-color: var(--cor-bg);
+    color: var(--cor-primaria);
     font-size: 18px;
 }
 
@@ -16,7 +21,6 @@ body {
 .container {
     margin: 0 auto;
     width: 90%;
-    /* width: 80vw; */
 }
 
 h1, h2 {
@@ -26,7 +30,6 @@ h1, h2 {
 /* ============================ Header =============================== */
 
 .top-header {
-    /* background-color: #c0b6ff; */
     background-color: rgb(30, 30, 30);
     padding:  1px;
 }
@@ -48,7 +51,6 @@ h1, h2 {
 .icons a {
     margin: 0 20px;
     color: #f1f1f1;
-    /* color: #28214f; */
     text-decoration: none;
 }
 
@@ -135,7 +137,7 @@ h1, h2 {
 #div1 h5 {
     font-weight: 900;
     font-size: 18px;
-    color: #c0b6ff;
+    color: var(--cor-primaria);
 }
 
 #div1 li {
@@ -162,8 +164,8 @@ h1, h2 {
 
 .button {
     padding: 15px 25px;
-    background-color: #28214f;
-    color: white;
+    background-color: var(--cor-bg);
+    color: var(--cor-primaria);
     border: none;
     margin: 10px;
     cursor: pointer;
@@ -173,10 +175,10 @@ h1, h2 {
     font-size: 14px;
 }
 
-img {
+/* img {
     width: 100%;
     margin: 25px 0;
-}
+} */
 
 .imgContainer img {
     width: 100%;
@@ -191,7 +193,7 @@ img {
 }
 
 .imgborder {
-    border: solid 3px #c0b6ff;
+    border: solid 3px var(--cor-primaria);
 }
 
 /* ============================ Blog =============================== */
@@ -228,6 +230,7 @@ img {
     /* width: 40em; */
     width: 350px;
     padding: 0px 10px;
+    overflow-x: hidden;
 }
 
 .container-blog p {
@@ -266,6 +269,23 @@ img {
     padding: 10px 0px 50px 0px;
     line-height: 30px;
     /* background-color: red; */
+}
+
+.botao-blog {
+    border: 1px solid var(--cor-primaria);
+    color: inherit !important;
+    font-weight: bold !important;
+    font-size: 17px !important;
+    background: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.botao-blog:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-bg) !important;
 }
 
 
@@ -485,7 +505,7 @@ footer {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    background: #c0b6ff;
+    background: var(--cor-primaria);
     position: absolute;
   }
   
