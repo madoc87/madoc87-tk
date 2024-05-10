@@ -2,7 +2,7 @@
 <html lang="pt-BR" data-lt-installed="true">
 
 <head>
-	<title>Test Server madoc87</title>
+	<title>Server madoc87</title>
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/x-icon" href="src/img/favicon.png">
 	<link  rel="stylesheet" type="text/css" href="src/css/style.css" />
@@ -20,7 +20,7 @@
 			<a href="https://github.com/madoc87" target="_blank" class="fa-brands fa-github"></a>
 			<a href="mailto:fabricio.r.assis@gmail.com" target="_blank" class="fa-solid fa-envelope"></a>
 			<a href="https://www.linkedin.com/in/fabricio-assis" target="_blank" class="fa-brands fa-linkedin"></a>
-			<a href="https://madoc87.github.io/portfolio/curriculo.html" target="_blank"
+			<a href="curriculo.html" target="_blank"
 				class="fa-solid fa-id-card"></a>
 		</div>
 	</div>
@@ -33,7 +33,7 @@
 				<a href="#servers">Servidores</a>
 				<a href="#blog">Blog</a>
 				<a href="#contato">Contato</a>
-				<a href="/devlink/index.html">DevLinks</a>
+				<a href="devlink">DevLinks</a>
 				<a href="https://madoc87.github.io/portfolio/">Portfolio</a>
 			</ul>
 		</nav>
@@ -260,8 +260,8 @@
 			</div>
 
 			<!-- ############################################## Post Home 3 ############################################## -->
-			<div class="container-blog" data-postagem-url="/postagem-3.html">
-				<a href="blog.html?postagem=postagem-3">
+			<div class="container-blog" data-postagem-url="/postagem-6.html">
+				<a href="blog.html?postagem=postagem-6">
 					<!-- <img src="src/img/image-service-1-upload-ai.png" class="img-blog postagem-imagem" /> -->
 					<div class="loading" style="display: flex;">
 						<div class="loader">
@@ -282,7 +282,11 @@
 		</div>
 
 		<!-- <div class="container centralizar"> -->
-			<button class="botao-blog" onclick="window.location.href='/blog-list.html'">Outros do artigos</button>
+			<button class="botao-blog" onclick="window.location.href='blog-list.html'">Outros do artigos</button>
+			<!-- <button class="botao-blog" onclick="
+			const baseURL = window.location.hostname === '127.0.0.1' ? '' : '/madoc87-tk/';
+			window.location.href=baseURL+'/blog-list.html'">Outros do artigos</button> -->
+			
 		<!-- </div> -->
 	</section>
 
@@ -322,7 +326,7 @@
 		<p>&copy; 2024 - madoc87</p>
 	</footer>
 
-	<script src="/src/scripts.js"></script>
+	<script src="src/scripts.js"></script>
 
 
 </body>

@@ -1,6 +1,10 @@
+// Base URL, que pode ser ajustada dependendo do ambiente (local ou produção)
+const baseURL = window.location.hostname === '127.0.0.1' ? '' : '/madoc87-tk/';
+
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".container-blog").forEach(container => {
-        const postagemUrl = 'blog' + container.getAttribute('data-postagem-url'); // Inclui a pasta /blog no caminho
+        const postagemUrl = baseURL + 'blog' + container.getAttribute('data-postagem-url'); // Inclui a pasta /blog no caminho
         fetch(postagemUrl)
             .then(response => response.text())
             .then(data => {
@@ -25,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Cria a tag  e define o src
                 const img = document.createElement('img');
-                img.src = imagemSrc.startsWith('http') ? imagemSrc : '../' + imagemSrc;
+                // img.src = imagemSrc.startsWith('http') ? imagemSrc : '../' + imagemSrc;
+                img.src = imagemSrc.startsWith('http') ? imagemSrc : baseURL + imagemSrc;
                 img.classList.add('img-blog');
 
                 // Insere a imagem antes do título

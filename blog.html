@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="/src/css/dracula.css">
-    <link rel="stylesheet" type="text/css" href="/src/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/blog/style-blog.css">
+    <link rel="stylesheet" href="src/css/dracula.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="blog/style-blog.css">
     <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
     <script src="https://kit.fontawesome.com/bec82f77f4.js" crossorigin="anonymous"></script>
 </head>
@@ -18,20 +18,20 @@
             <a href="https://github.com/madoc87" target="_blank" class="fa-brands fa-github"></a>
             <a href="mailto:fabricio.r.assis@gmail.com" target="_blank" class="fa-solid fa-envelope"></a>
             <a href="https://www.linkedin.com/in/fabricio-assis" target="_blank" class="fa-brands fa-linkedin"></a>
-            <a href="https://madoc87.github.io/portfolio/curriculo.html" target="_blank"
+            <a href="curriculo.html" target="_blank"
                 class="fa-solid fa-id-card"></a>
         </div>
     </div>
 
     <header class="header">
-        <img class="logo" alt="Logo" style="width: 5%;" src="../src/img/logo_madoc87_v1.png">
+        <img class="logo" alt="Logo" style="width: 5%;" src="src/img/logo_madoc87_v1.png">
         <nav class="menu">
             <ul>
-                <a href="/">Home</a>
-                <a href="/#servers">Servidores</a>
-                <a href="/blog-list.html">Blog</a>
-                <a href="/#contato">Contato</a>
-                <a href="../devlink/index.html">DevLinks</a>
+                <a href="index.html">Home</a>
+                <a href="index.html#servers">Servidores</a>
+                <a href="blog-list.html">Blog</a>
+                <a href="index.html#contato">Contato</a>
+                <a href="devlink/index.html">DevLinks</a>
                 <a href="https://madoc87.github.io/portfolio/">Portfolio</a>
             </ul>
         </nav>
@@ -42,8 +42,8 @@
         <aside id="barra-lateral"></aside>
         <div class="container centralizar">
             <hr><br>
-            <button class="botao-footer" onclick="window.location.href='/blog-list.html'">Voltar Lista do Blog</button>
-            <button class="botao-footer" onclick="window.location.href='/'">Voltar para Home</button>
+            <button class="botao-footer" onclick="window.location.href='blog-list.html'">Voltar Lista do Blog</button>
+            <button class="botao-footer" onclick="window.location.href='index.html'">Voltar para Home</button>
         </div>
     </main>
     <footer>
@@ -99,13 +99,13 @@
 
         var link1 = document.createElement("link");
         link1.rel = "stylesheet";
-        link1.href = "../blog/style-blog.css";
+        link1.href = "blog/style-blog.css";
 
         document.head.appendChild(link1);
 
         var link2 = document.createElement("link");
         link2.rel = "stylesheet";
-        link2.href = "../src/css/style.css";
+        link2.href = "src/css/style.css";
         document.head.appendChild(link2);
     });
 

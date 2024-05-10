@@ -1,3 +1,6 @@
+// Base URL, que pode ser ajustada dependendo do ambiente (local ou produção)
+const baseURL = window.location.hostname === '127.0.0.1' ? '' : '/madoc87-tk/';
+
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("conteudo-principal");
 
@@ -14,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const postagemDiv = document.createElement('div');
             postagemDiv.className = 'postagem';
             postagemDiv.innerHTML = `
-                <a class="link" href="/blog.html?postagem=${arquivo.replace('.html', '')}">
+                <a class="link" href="`+baseURL+`/blog.html?postagem=${arquivo.replace('.html', '')}">
                     <div class="container-blog">
                         <div class="blog-sec-1">
                             <img class="thumb-blog" src="${imagem}" alt="${titulo}" />
@@ -33,11 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Função para carregar postagens e ordená-las por data
     function carregarEOrdenarPostagens() {
-        const postagens = ['postagem-1.html', 'postagem-2.html', 'postagem-3.html', 'postagem-4.html', 'postagem-5.html'];
+        const postagens = ['postagem-1.html', 'postagem-2.html', 'postagem-3.html', 'postagem-4.html', 'postagem-5.html', 'postagem-6.html'];
         let postsData = [];
 
         Promise.all(postagens.map(arquivo =>
-            fetch(`blog/${arquivo}`)
+            fetch(baseURL+`blog/${arquivo}`)
                 .then(response => response.text())
                 .then(html => {
                     const parser = new DOMParser();
