@@ -62,3 +62,7 @@ function toggleDiv(divId) {
         div.style.display = "block";
     }
 }
+
+//Script para mostrar o ano atual
+const anoAtual = new Date().getFullYear();
+document.getElementById("ano").textContent = anoAtual;
